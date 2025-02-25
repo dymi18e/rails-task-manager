@@ -1,0 +1,19 @@
+<h1><%= @task.title %></h1>
+
+<div class="p-3 mb-2 bg-info text-dark"><%= @task.details %></div>
+
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+<label class="form-check-label" for="flexCheckDefault">
+  This task is completed
+</label>
+<div>
+  <%= link_to edit_task_path(@task) do %>
+    <i class="fa-solid fa-pen-to-square fa-3x"></i>
+    <% end %>
+</div>
+<div>
+  <%= link_to tasks_path do %>
+  <i class="fa-solid fa-backward-fast fa-3x"></i>
+  <% end %>
+</div>
